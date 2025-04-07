@@ -1,0 +1,181 @@
+.expense-container {
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  padding: 20px;
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.expense-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.expense-title h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.year-select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  color: #6b21a8;
+}
+
+.download-btn {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  color: #6b21a8;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.expense-table th {
+  background-color: #f3f0ff;
+  color: #6b21a8;
+  font-weight: bold;
+}
+
+.expense-table tr:nth-child(even) {
+  background-color: #faf8ff;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b21a8;
+}
+
+.expense-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #6b46c1;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination span {
+  color: #6b21a8;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.page-btn {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: #6b21a8;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.dialog h2 {
+  margin-top: 0;
+  color: #6b21a8;
+}
+
+.dialog input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.dialog-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dialog-buttons button:first-child {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.dialog-buttons button:last-child {
+  background-color: #6b21a8;
+  color: white;
+}

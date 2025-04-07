@@ -1,0 +1,356 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+/* Container */
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  padding: 0px 120px; 
+  width: 100%;
+}
+
+/* Login/Registration Box */
+.login-box {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: start;
+  justify-content: flex-start; */
+  /* width: 800px; */
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  /* padding-top: 50px; */
+}
+
+/* Logo inside the login-box at the top-left */
+/* Watermark Logo */
+.login-box-logo {
+  /* position: absolute;
+  top: 15px; */
+  /* left: 15px; */
+  width: 131px;
+  height: auto;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 0px 150px;
+}
+
+/* Adjustments for Right Section Image */
+.company-logo {
+  width: 100%; /* Adjusted width for better balance */
+  height: auto;
+  margin-top: 15px;
+  object-fit: contain;
+}
+
+.login-box h2 {
+  
+  font-size: 32px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.login-box h3 {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box label {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="password"]
+ {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-box input[type="tel"] {
+  padding: 12px 15px 12px 45px; /* Left padding increased for the flag */
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  font-size: 16px;
+}
+
+
+/* Focus Effect */
+.login-box input:focus {
+  border-color: #6A1B9A;
+  outline: none;
+}
+
+/* Forgot password and checkbox */
+.forgot-password {
+  color: #6A1B9A;
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.remember-me label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Buttons */
+.login-btn {
+  background-color: #6A1B9A;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #B39DDB;
+}
+
+/* Links */
+.register-link, .admin-login {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link a,
+.admin-login a {
+  color: #6A1B9A;
+  text-decoration: none;
+}
+
+.register-link a:hover,
+.admin-login a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for OTP input container */
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Styles for individual OTP input boxes */
+.otp-box {
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.otp-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px; 
+  font-weight: bold;
+  color: white;
+  background-color: #B39DDB;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.otp-btn:hover {
+  background-color: #6A1B9A;
+}
+
+.otp-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Highlight the active input */
+.otp-box:focus {
+  border-color: #6A1B9A;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Add Vertical Scroll for Register Page */
+.register-container {
+  /* Limits height to 80% of viewport */
+  overflow-y: scroll; /* Enables vertical scrolling */
+  padding: 20px;
+}
+
+
+
+/* Custom Scrollbar */
+.register-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.register-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.register-container::-webkit-scrollbar-thumb {
+  background: #6A1B9A;
+  border-radius: 10px;
+}
+
+.register-container::-webkit-scrollbar-thumb:hover {
+  background: #B39DDB;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .otp-box {
+    width: 35px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* Footer */
+.footer {
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive (Improved) */
+@media (max-width: 900px) {
+  .login-box {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left-section, .right-section {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .login-box-logo {
+    width: 60px; /* Smaller logo on smaller screens */
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .login-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .login-box h2 {
+    font-size: 24px;
+  }
+
+  .login-box input {
+    padding: 10px;
+  }
+
+  .login-box-logo {
+    width: 50px;
+    top: 8px;
+    left: 8px;
+  }
+
+  .company-logo {
+    width: 200px;
+  }
+}

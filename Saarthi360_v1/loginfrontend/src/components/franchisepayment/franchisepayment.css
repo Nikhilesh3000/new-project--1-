@@ -1,0 +1,165 @@
+/* Base styles */
+.franchise-container {
+    padding: 1.5rem;
+    background-color: white;
+    min-height: 100vh;
+    font-family: sans-serif;
+    overflow-x: auto;
+  }
+  
+  .franchise-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+  
+  .franchise-subtitle {
+    color: #4b5563;
+  }
+  
+  /* Search section */
+  .search-container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .search-input-wrapper {
+    position: relative;
+    width: 33.333%;
+  }
+  
+  .search-input {
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    width: 100%;
+    padding-left: 2.5rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 0.75rem;
+    color: #6b7280;
+  }
+  
+  /* Filter section */
+  .filter-container {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .filter-select {
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Table header */
+  .table-header {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .download-icon {
+    cursor: pointer;
+    color: #2563eb;
+  }
+  
+  /* Table container */
+  .table-container {
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1d5db;
+    overflow: auto;
+  }
+  
+  .franchise-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 2000px;
+  }
+  
+  .table-header-row {
+    background-color: #c7d2fe;
+    color: #111827;
+  }
+  
+  .table-header-cell {
+    padding: 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .action-header {
+    text-align: center;
+    position: sticky;
+    right: 0;
+    background-color: #c7d2fe;
+  }
+  
+  .table-row-even {
+    background-color: #f3f4f6;
+  }
+  
+  .table-row-odd {
+    background-color: white;
+  }
+  
+  .table-cell {
+    padding: 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .edit-input {
+    border: 1px solid #e5e7eb;
+    padding: 0.25rem;
+    width: 100%;
+  }
+  
+  .action-cell {
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    position: sticky;
+    right: 0;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-icon {
+    color: #7e22ce;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    color: #dc2626;
+    cursor: pointer;
+  }
+  
+  .check-icon {
+    color: #16a34a;
+    cursor: pointer;
+  }
+  
+  .cancel-icon {
+    color: #dc2626;
+    cursor: pointer;
+  }
+  
+  

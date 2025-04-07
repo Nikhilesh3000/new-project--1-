@@ -1,0 +1,59 @@
+
+  .generateform16-paper {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+  }
+  
+  .generateform16-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .generateform16-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .generateform16-grid-item {
+    flex: 1 1 calc(50% - 16px);
+  }
+  
+  .generateform16-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .generateform16-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .generateform16-radio-group {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .generateform16-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .generateform16-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 16px;
+  }

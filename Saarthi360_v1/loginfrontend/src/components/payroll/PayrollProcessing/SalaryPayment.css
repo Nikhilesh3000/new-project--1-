@@ -1,0 +1,323 @@
+ .salary-payment-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  .salary-payment-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .salary-payment-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .salary-payment-tab {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #3B2858;
+    color: #3B2858;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .salary-payment-tab.active {
+    background-color: #4F378A;
+    color: white;
+  }
+  
+  .salary-payment-modes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .salary-payment-mode {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: #4F378A;
+    cursor: pointer;
+    transition: font-weight 0.3s, text-decoration 0.3s;
+  }
+  
+  .salary-payment-mode.active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+  
+  .salary-payment-divider {
+    border: none;
+    position: relative;
+    top: -20px;
+    border-top: 0.5px solid #cccccc;
+    margin-bottom: -10px;
+    width: calc(100% - 4vw);
+  }
+  
+  .salary-payment-bulk {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .salary-payment-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .salary-payment-search-icon {
+    font-size: 1.5rem;
+    color: #4F378A;
+  }
+  
+  .salary-payment-search-input {
+    padding: 10px;
+    border: 1px solid #4F378A;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .salary-payment-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .salary-payment-select-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .salary-payment-select {
+    padding: 10px;
+    border: 1px solid #4F378A;
+    border-radius: 4px;
+  }
+  
+  .salary-payment-proceed-button {
+    padding: 10px 20px;
+    background-color: #4F378A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /*
+  .salary-payment-table-container {
+    
+  }
+  */
+  
+  .salary-payment-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .salary-payment-table-title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .salary-payment-download-button {
+    padding: 10px 20px;
+    background-color: #4F378A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .salary-payment-table-wrapper {
+    height: 45vh;
+    margin-bottom: 2vh;
+  }
+  
+  .salary-payment-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .salary-payment-table th,
+  .salary-payment-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .salary-payment-action {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .salary-payment-action i {
+    cursor: pointer;
+  }
+
+  .salary-payment-action .edit-icon {
+    color: green;
+  }
+  
+  .salary-payment-action .delete-icon {
+    color: red;
+  }
+
+  .salary-payment-table th:last-child,
+  .salary-payment-table td:last-child {
+    position: sticky;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+  }
+/* Modal overlay */
+.salary-payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.salary-payment-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 3vw; /* Add border radius */
+  width: 60vw;
+  height: 50vh;
+  align-content: space-evenly;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #4F378A; /* Add border with color #4F378A */
+  position: relative; /* For positioning the close button */
+}
+
+/* Close button on the top-right */
+.salary-payment-modal-close-top {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #E4E4F7;
+  border-radius: 100%;
+  padding: 0 1vw;
+  border: none;
+  font-size: 5vw;
+  font-weight: lighter;
+  color: #4F378A;
+  cursor: pointer;
+}
+
+/* Grid layout for placeholders */
+.salary-payment-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px; /* Space between inputs */
+}
+
+/* Input rows */
+.salary-payment-modal-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.salary-payment-modal-row label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.salary-payment-modal-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.salary-payment-modal-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.salary-payment-modal-submit {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4F378A;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10vh;
+  width: 50%;
+}
+
+/* Searchable Dropdown Container */
+.salary-payment-dropdown {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Search Bar with Down Arrow */
+.salary-payment-search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.salary-payment-dropdown-icon {
+  margin-left: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Dropdown List */
+.salary-payment-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Dropdown Item */
+.salary-payment-dropdown-item {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.salary-payment-dropdown-item:hover {
+  background-color: #f4f4f4;
+}
+
+.salary-payment-single {
+  justify-items: center;
+}

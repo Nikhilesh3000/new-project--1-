@@ -1,0 +1,122 @@
+.header {
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 100px;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.help-icon,
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.profile-container,
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.user-profile {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: rgb(109, 80, 198);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow-y: auto;
+    /* Enables scrolling if content exceeds max height */
+    z-index: 1000;
+    width: 150px;
+    /* Width remains compact */
+    max-height: 300px;
+    /* Limits height for excessive content */
+    padding: 5px 0;
+    /* Improved spacing */
+}
+
+/* Individual Notification Items */
+.dropdown-menu li {
+    padding: 6px 10px;
+    /* Compact yet readable */
+    font-size: 0.85rem;
+    line-height: 1.4;
+    word-break: break-word;
+    /* Ensures long text wraps properly */
+}
+
+/* Scrollbar Customization (Optional for better UI) */
+.dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background: #6d28d9;
+    border-radius: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background: #f3f4f6;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li:hover {
+    background: #f0f0f0;
+}
+
+/* Positioning */
+.notifications-dropdown {
+    right: 50px;
+    /* Adjust to align properly */
+}
+
+.settings-dropdown {
+    right: 0;
+}

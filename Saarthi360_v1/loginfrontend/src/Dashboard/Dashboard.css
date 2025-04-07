@@ -1,0 +1,71 @@
+/* *{
+    width: 100%;
+} */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f7fa;
+    /* width: 100%  !important; */
+}
+
+.dashboard-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.dashboard-content {
+    flex: 3;
+    padding: 20px;
+    overflow-y: auto; /* Ensures content is scrollable */
+}
+
+.calendar-panel-container {
+    flex: 0;
+    background-color: #ffffff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Ensures calendar is scrollable */
+}
+.insidesidebar {
+    position: fixed;   /* Fix sidebar to the left */
+    top: 0;
+    left: 0;
+    width: 250px;      /* Sidebar width */
+    height: 100vh;     /* Full height */
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;  /* Add scrollbar if content exceeds */
+    z-index: 10;       /* Ensure it's above other content */
+}
+
+.content-layout {
+    margin-left: 250px; /* Offset content by sidebar width */
+    width: calc(100% - 250px); /* Ensures content doesn't overlap */
+}
+
+.dashboard-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20; /* Above all content */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

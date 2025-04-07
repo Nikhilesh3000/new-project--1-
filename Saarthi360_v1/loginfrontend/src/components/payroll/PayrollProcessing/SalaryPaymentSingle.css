@@ -1,0 +1,344 @@
+/* Popup Container */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup Content */
+.popup-content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px; /* Adjusted for square appearance */
+    height: auto; /* Adjusted height for better appearance */
+    text-align: center;
+    transform: scale(0.9);
+    animation: popupAppear 0.3s ease-in-out forwards;
+}
+
+.popup-content h2 {
+    margin-bottom: 55px;
+    font-size: 20px;
+    color: #333;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.popup-content input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.popup-content input:focus {
+    border-color: #6e517f;
+    outline: none;
+}
+
+.popup-content button {
+    background-color: #7887d2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+.popup-content button:hover {
+    background-color: #5959aa;
+    transform: scale(1.05);
+}
+
+.popup-content button:active {
+    background-color: #6a6fcf;
+    transform: scale(0.98);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popupAppear {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Payroll Card Styling */
+.payroll-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: auto;
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+/* Header Section */
+.payroll-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Employee Details */
+.payroll-info {
+    flex: 2;
+}
+
+.payroll-info h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #4c3f85;
+}
+
+.payroll-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.payroll-info-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between columns */
+  }
+  
+  .payroll-info-column {
+    flex: 1; /* Equal width for both columns */
+    min-width: 300px; /* Minimum width for responsiveness */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    margin-bottom: 20px; /* Add spacing below the buttons */
+  }
+
+  .payroll-actions {
+    flex: 1; /* Take up less space */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+  }
+  
+  /* Icon-Only Button Styles */
+  .icon-container button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #4c3f85; /* Default icon color */
+    font-size: 20px; /* Adjust icon size */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover and active effects */
+  }
+  
+  /* Hover Effect for Icons */
+  .icon-container button:hover {
+    color: #5959aa; /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+  } 
+
+  
+/* Active Effect for Icons */
+.icon-container button:active {
+    color: #6a6fcf; /* Change icon color when clicked */
+    transform: scale(1); /* Reset scale when clicked */
+  }
+  
+  /* Delete Button (Red Icon) */
+  .icon-container .delete-button {
+    color: red; /* Default red color for delete button */
+  }
+  
+  .icon-container .delete-button:hover {
+    color: darkred; /* Darker red on hover */
+  }
+
+/* Net Pay Box */
+.net-pay {
+    background: #d2c4f6;
+    color: #4c3f85;
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    border-left: 5px solid #4c3f85;
+}
+
+.net-pay h3 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.net-pay p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Proceed Button Section */
+.proceed-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.proceed-button {
+    background-color: #7887d2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.proceed-button:hover {
+    background-color: #5959aa;
+    transform: scale(1.05);
+}
+
+.proceed-button:active {
+    background-color: #6a6fcf;
+    transform: scale(0.98);
+}
+
+/* Salary Breakdown Table */
+.salary-section {
+    width: 100%;
+}
+
+.salary-breakdown-container {
+    overflow-x: auto;
+}
+
+.salary-breakdown table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.salary-breakdown th, 
+.salary-breakdown td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.salary-breakdown th {
+    background: #f4f4f4;
+    font-weight: bold;
+    color: #4c3f85;
+}
+
+/* Total Net Payable Section */
+.total-net-payable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 12px;
+    background: #e8e8ff;
+    border-radius: 8px;
+    border: 2px solid #4c3f85;
+    color: #4c3f85;
+}
+
+/* Icon Container */
+.icon-container {
+    align-items: center;
+    justify-content: right;
+    margin: 0 10px; /* Added margin for spacing between icons */
+}
+
+/* Button Styles */
+.icon-container button {
+    align-items: center;
+    color: rgb(75, 75, 75);
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin: 0 5px; /* Spacing between buttons */
+}
+
+.icon-container button:hover {
+    transform: scale(1.05);
+}
+
+.icon-container button:active {
+    transform: scale(0.98);
+}
+
+.proceed-button-single {
+    padding: 10px 20px;
+    background-color: #4F378A;
+    color: white;
+    border: 1px solid #3B2858;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .proceed-button-single.active {
+    color: #3B2858;
+    background-color: white;
+  }

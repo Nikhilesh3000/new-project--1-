@@ -1,0 +1,161 @@
+.custom-table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 45vh;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tbody {
+    background-color: #F4F4F8;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .salary-payment-action {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .salary-payment-action .edit-icon {
+    color: rgb(55, 55, 55);
+  }
+  
+  .salary-payment-action .delete-icon {
+    color: red;
+  }
+
+  .sticky-column-left:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #F4F4F8; /* Match the table background */
+    z-index: 1; /* Ensure it stays above other cells */
+    border-right: 1px solid #ddd; /* Optional: Add a border for better visibility */
+  }
+  
+  .sticky-column-left:nth-child(2) {
+    position: sticky;
+    left: 40px; /* Adjust this value based on the width of the first sticky column */
+    background-color: #F4F4F8;
+    z-index: 1;
+    border-right: 1px solid #ddd;
+  }
+
+  .sticky-column-right:nth-last-child(1) {
+    position: sticky;
+    right: 0;
+    background-color: #F4F4F8;
+    z-index: 1;
+    border-left: 1px solid #ddd;
+}
+
+.sticky-column-right:nth-last-child(2) {
+    position: sticky;
+    right: 70px;
+    background-color: #F4F4F8;
+    z-index: 1;
+    border-left: 1px solid #ddd;
+}
+
+.sticky-column-right:nth-last-child(3) {
+    position: sticky;
+    right: 140px;
+    background-color: #F4F4F8;
+    z-index: 1;
+    border-left: 1px solid #ddd;
+}
+  
+/* Sticky headers */
+.custom-table th {
+    position: sticky;
+    top: 0;
+    background-color: #F4F4F8; /* Match the table background */
+    z-index: 2; /* Ensure headers are above other content */
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Sticky headers for left columns */
+.custom-table th.sticky-column-left:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 3; /* Higher z-index to stay above other sticky columns */
+    background-color: #F4F4F8;
+    border: 1px solid #ddd;
+}
+
+.custom-table th.sticky-column-left:nth-child(2) {
+    position: sticky;
+    left: 40px; /* Match the left value of the second sticky column */
+    z-index: 3;
+    background-color: #F4F4F8;
+    border: 1px solid #ddd;
+}
+
+.custom-table th.sticky-column-right:nth-last-child(1) {
+    position: sticky;
+    right: 0;
+    z-index: 3;
+    background-color: #F4F4F8;
+    border: 1px solid #ddd;
+}
+
+.custom-table th.sticky-column-right:nth-last-child(2) {
+    position: sticky;
+    right: 70px; /* Match the right value of the second-to-last sticky column */
+    z-index: 3;
+    background-color: #F4F4F8;
+    border: 1px solid #ddd;
+}
+
+.custom-table th.sticky-column-right:nth-last-child(3) {
+    position: sticky;
+    right: 140px; /* Match the right value of the third-to-last sticky column */
+    z-index: 3;
+    background-color: #F4F4F8;
+    border: 1px solid #ddd;
+}
+
+ .row-paid {
+    background-color: #E6FEEA;
+  }
+
+.row-paid .sticky-column-left {
+    background-color: #E6FEEA;
+}
+
+.row-paid .sticky-column-right {
+    background-color: #E6FEEA;
+}
+
+/* Style the checkbox */
+.custom-table input[type="checkbox"] {
+    accent-color: #4F378A; /* Modern browsers support this for checkbox color */
+  }
+  
+  /* Fallback for older browsers */
+  .custom-table input[type="checkbox"]:checked {
+    background-color: #4F378A;
+    border-color: #4F378A;
+  }
+
+  .row-selected {
+    background-color: #E4E4F7; /* Light blue for selected rows */
+  }
+
+.row-selected .sticky-column-left {
+  background-color: #E4E4F7;
+}
+
+.row-selected .sticky-column-right {
+  background-color: #E4E4F7;
+}

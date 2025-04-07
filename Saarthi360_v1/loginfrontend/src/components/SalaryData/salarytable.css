@@ -1,0 +1,259 @@
+/* Salary Table Container */
+.salary-wrapper .salary-table-container {
+  position: relative; /* Change from fixed to relative */
+  top: 0; /* Reset the top value */
+  left: 0; /* Align with content flow */
+  width: calc(100% - 90px); /* Adjust width to account for sidebar */
+  margin-left: 110px; /* Offset by sidebar width */
+  height: 100vh; /* Full height to match sidebar */
+  padding: 2%;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  font-family: "Inter", sans-serif;
+  color: #1e293b;
+}
+
+/* Header */
+.salary-wrapper .header h2 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.salary-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.salary-wrapper .header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Scroll Container */
+.salary-wrapper .scroll-container {
+  overflow: auto;
+  max-height: 50vh;
+}
+
+/* Table Styles */
+.salary-wrapper table {
+  width: 70%;
+  border-collapse: collapse;
+  table-layout: auto;
+  font-size: 1rem;
+}
+
+.salary-wrapper th,
+.salary-wrapper td {
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  min-width: 10vw;
+  word-wrap: break-word;
+}
+
+.salary-wrapper thead tr {
+  background-color: #f3f0ff;
+}
+
+.salary-wrapper .actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+/* Buttons */
+.salary-wrapper .download-btn,
+.salary-wrapper .add-btn {
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+  padding: 8px 12px; /* Increased padding */
+  border-radius: 6px; /* Smooth edges */
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Auto width to fit text */
+  height: auto; /* Auto height for text */
+  min-width: 120px; /* Ensure enough space */
+  min-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Add background rectangle effect */
+.salary-wrapper .add-btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(124, 58, 237, 0.2); /* Light purple */
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.salary-wrapper .icon-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.salary-wrapper .icon-btn:hover {
+  background-color: rgba(124, 58, 237, 0.1);
+}
+
+/* Modal Styling */
+.salary-wrapper .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.salary-wrapper .modal {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  min-width: 400px;
+}
+
+.salary-wrapper .modal h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.salary-wrapper .form-group {
+  margin-bottom: 1rem;
+}
+
+.salary-wrapper .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.salary-wrapper .form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.salary-wrapper .modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.salary-wrapper .modal-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.salary-wrapper .modal-actions button:first-child {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.salary-wrapper .modal-actions button:first-child:hover {
+  background-color: #6d28d9;
+}
+
+.salary-wrapper .modal-actions button:last-child {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.salary-wrapper .modal-actions button:last-child:hover {
+  background-color: #e5e7eb;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .salary-wrapper .salary-table-container {
+    left: 10vw;
+    right: 10vw;
+    width: 80vw;
+  }
+  .salary-wrapper .modal {
+    min-width: 60vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .salary-wrapper .salary-table-container {
+    left: 5vw;
+    right: 5vw;
+    width: 90vw;
+    min-height: calc(100vh - 50vh);
+  }
+  .salary-wrapper th,
+  .salary-wrapper td {
+    min-width: 10vw;
+    font-size: 0.9rem;
+  }
+  .salary-wrapper .modal {
+    min-width: 80vw;
+  }
+  .salary-wrapper .form-actions,
+  .salary-wrapper .modal-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .salary-wrapper .form-actions button,
+  .salary-wrapper .modal-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .salary-wrapper .salary-table-container {
+    top: 8vh;
+    left: 2vw;
+    right: 2vw;
+    width: 96vw;
+  }
+  .salary-wrapper table {
+    font-size: 0.85rem;
+  }
+  .salary-wrapper th,
+  .salary-wrapper td {
+    min-width: 8vw;
+    padding: 0.6rem;
+  }
+  .salary-wrapper .modal {
+    min-width: 90vw;
+  }
+}

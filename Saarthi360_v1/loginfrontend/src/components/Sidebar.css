@@ -1,0 +1,210 @@
+.sidebar-container {
+    position: relative;
+    height: 100%;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+  
+  .hamburger-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-right: auto; /* Aligns to the left */
+  }
+  
+  .hamburger-toggle:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+  }
+  
+  /* Fixed hamburger button when sidebar is closed */
+  .hamburger-toggle-fixed {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1100;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-toggle-fixed:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+  }
+  
+  .sidebar {
+    width: 18rem; /* Keeping original width */
+    height: 100vh; /* Reduced height from 100% to 90vh */
+    max-height: 600px; /* Ensures the sidebar doesn't get too tall on larger screens */
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
+    overflow-y: auto; /* Enables scrolling if content exceeds height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .sidebar-inactive {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar-active {
+    transform: translateX(0);
+  }
+  
+  /* Responsive Sidebar for Tablets and Smaller Screens */
+  @media (max-width: 1024px) {
+    .sidebar {
+      height: 65vh; /* Slightly shorter on medium screens */
+      max-height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      height: 60vh; /* Compact height for smaller screens */
+      max-height: 350px;
+    }
+  }
+  
+  .sidebar-content {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .menu-item {
+    margin-bottom: 1rem;
+  }
+  
+  .menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .submenu {
+    background-color: #6a5acd;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+    align-items: center;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .submenu-arrow {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .submenu li:hover {
+    color: #000;
+  }
+  
+  .logout-container {
+    margin-top: auto;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logout-btn {
+    background: linear-gradient(145deg, #ff4b5c, #d42f3f);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 80%;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .logout-btn:hover {
+    background: linear-gradient(145deg, #d42f3f, #ff4b5c);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  /* Hamburger button for mobile */
+  .hamburger {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  

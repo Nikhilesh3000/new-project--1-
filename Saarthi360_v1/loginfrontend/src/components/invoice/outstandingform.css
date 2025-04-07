@@ -1,0 +1,115 @@
+.outstanding-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .outstanding-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #5d4b8c;
+  }
+  
+  .outstanding-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .outstanding-form-header h2 {
+    color: #5d4b8c;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  
+  .outstanding-close-btn {
+    background-color: #f0f0f0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .outstanding-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .outstanding-form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outstanding-form-group label {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  .outstanding-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .outstanding-date-input-container {
+    position: relative;
+  }
+  
+  .outstanding-date-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding-right: 30px; /* Space for calendar icon */
+  }
+  
+  .outstanding-form-note {
+    color: #f44336;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .outstanding-form-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .outstanding-save-btn {
+    background-color: #3a2d5b;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .outstanding-save-btn:hover {
+    background-color: #5d4b8c;
+  }
+  
+  

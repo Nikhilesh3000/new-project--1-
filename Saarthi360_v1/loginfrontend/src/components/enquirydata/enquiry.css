@@ -1,0 +1,466 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5fa;
+    color: #333;
+  }
+  
+  .enquiry-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Table View Styles */
+  .enquiry-header {
+   
+    margin-bottom: 20px;
+  }
+  
+  .enquiry-header h1 {
+    color: #4a3aff;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .enquiry-header p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .search-sort-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    
+  }
+
+  .enquiry-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    /* flex-direction: row; */
+  }
+  
+  .enquiry-search-container {
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .enquiry-search-input {
+    width: 100%;
+    padding: 10px 15px 10px 35px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .enquiry-search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .enquiry-sort-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+  }
+  
+  .enquiry-sort-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .enquiry-sort-order-button {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .enquiry-sort-button,
+  .enquiry-add-button {
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+  }
+  
+  .enquiry-sort-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+  
+  .enquiry-add-button {
+    background-color: #4a3aff;
+    width: fit-content;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  
+  .wrapper-enq-table{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: white;
+  }
+
+
+  .enquiry-table-container {
+    /* background-color: white; */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .enquiry-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .enquiry-table-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .enquiry-download-button {
+    width: fit-content;
+    background: none;
+    border: none;
+    color: #4a3aff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .enquiry-table-scroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+  
+  .enquiry-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .enquiry-table th,
+  .enquiry-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .enquiry-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .enquiry-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .enquiry-action-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .enquiry-edit-button,
+  .enquiry-delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-enquiry-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef0ff;
+    border: 2px dashed #4a3aff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #4a3aff;
+    font-weight: 500;
+    gap: 10px;
+  }
+  
+  .add-enquiry-button:hover {
+    background-color: #e5e8ff;
+  }
+  
+  .enquiry-plus-icon {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .enquiry-pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  .enquiry-pagination-bar {
+    flex: 1;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 3px;
+    position: relative;
+  }
+  
+  .enquiry-pagination-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: #4a3aff;
+    border-radius: 3px;
+  }
+  
+  /* Form View Styles */
+  .enquiry-form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .enquiry-form-header {
+    margin-bottom: 20px;
+  }
+  
+  .enquiry-back-button {
+    background: none;
+    border: none;
+    color: #4a3aff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .enquiry-form-section {
+    margin-bottom: 30px;
+  }
+  
+  .enquiry-form-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .enquiry-form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .enquiry-form-field {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .enquiry-form-field label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .enquiry-form-field input,
+  .enquiry-form-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .enquiry-form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    max-height: 80vh; /* Limits height for scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+  .enquiry-form-field input[type="date"] {
+    padding: 9px 10px;
+  }
+  
+  .enquiry-mobile-field {
+    position: relative;
+  }
+  
+  .enquiry-mobile-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .enquiry-country-code {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .enquiry-mobile-field input {
+    padding-left: 45px;
+  }
+  
+  .enquiry-form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .enquiry-save-button {
+    background-color: #4a3aff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #3929cc;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .enquiry-form-row {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .enquiry-form-field {
+      width: 100%;
+    }
+  
+    .enquiry-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .enquiry-search-container {
+      max-width: 100%;
+    }
+  }
+  
+  /* Add this to your existing CSS file or create a new one */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 1000;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #d32f2f;
+}
+
+.no-data-message {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.cancel-button {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cancel-button:hover {
+  background-color: #e0e0e0;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+  

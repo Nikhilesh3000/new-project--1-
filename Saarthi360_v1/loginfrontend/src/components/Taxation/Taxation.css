@@ -1,0 +1,384 @@
+.taxation-wrapper .taxation-screen {
+  position: relative; /* Change from fixed to relative */
+  top: 0; /* Reset the top value */
+  left: 0; /* Align with content flow */
+  width: calc(100% - 5px); /* Adjust width to account for sidebar */
+  margin-left: 20px; /* Offset by sidebar width */
+  height: 100vh; /* Full height to match sidebar */
+  padding: 2%;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  font-family: 'Inter', sans-serif;
+  color: #1E293B;
+}
+
+
+/* Taxation Screen Styles */
+.taxation-wrapper {
+  flex-grow: 1; 
+  font-family: "Inter", sans-serif;
+  color: #1e293b;
+}
+
+.taxation-wrapper  .taxation-screen {
+  padding: 20px;
+}
+
+.taxation-wrapper .taxation-content {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2%;
+}
+
+/* Tabs */
+.taxation-wrapper .tax-tabs {
+  display: flex;
+  margin-bottom: 2%;
+  flex-wrap: wrap;
+}
+
+.taxation-wrapper  .tab-button {
+  padding: 1% 3%;
+  border: none;
+  background-color: #e9ecef;
+  color: #495057;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  margin-right: 1%;
+  flex: 1;
+  text-align: center;
+}
+
+.taxation-wrapper  .tab-button.active {
+  background-color: #fff;
+  color: #343a40;
+  border-bottom: 2px solid #8a2be2;
+  display: flex;
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 5px;
+}
+/* Table Styles */
+.taxation-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2%;
+}
+
+/* Tax Slabs */
+.taxation-wrapper .tax-slabs {
+  margin-bottom: 20px;
+}
+
+/* Year Selector */
+.taxation-wrapper  .year-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.taxation-wrapper .year-selector select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  margin-right: 10px;
+}
+
+.taxation-wrapper  .year-selector span {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* Table Header */
+.taxation-wrapper .table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.taxation-wrapper .table-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.taxation-wrapper .table-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.taxation-wrapper  .table-icons .icon {
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #495057;
+}
+
+
+.taxation-wrapper  thead tr {
+  background-color: #f3f0ff;
+}
+
+.taxation-wrapper th,
+.taxation-wrapper td {
+  padding: 1.2%;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+    border: 1px solid #e0e0e0;
+}
+
+.taxation-wrapper  th {
+  font-weight: 500;
+  color: #7c3aed;
+}
+
+.taxation-wrapper tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Action Icons */
+.taxation-wrapper .icon {
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #495057;
+}
+
+.taxation-wrapper .icon:hover {
+  color: #8a2be2;
+}
+
+/* Add Button Container */
+.taxation-wrapper .add-btn-container {
+  text-align: left;
+}
+
+.taxation-wrapper .add-btn {
+  background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 1% 2%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.taxation-wrapper  .add-btn:hover {
+  background-color: #6a1bbe;
+}
+
+/* Edit Form Overlay */
+.taxation-wrapper  .edit-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Edit Form */
+.taxation-wrapper .edit-form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.taxation-wrapper .edit-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.taxation-wrapper  .form-group {
+  margin-bottom: 1rem;
+}
+
+.taxation-wrapper  .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.taxation-wrapper .form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.taxation-wrapper .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.taxation-wrapper .form-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.taxation-wrapper .form-actions button:first-child {
+  background-color: #8a2be2;
+  color: white;
+}
+
+.taxation-wrapper .form-actions button:first-child:hover {
+  background-color: #6a1bbe;
+}
+
+.taxation-wrapper .form-actions button:last-child {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.taxation-wrapper .form-actions button:last-child:hover {
+  background-color: #e5e7eb;
+}
+
+/* Modal Styling */
+.taxation-wrapper .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.taxation-wrapper .modal {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.taxation-wrapper .form-group {
+  margin-bottom: 1rem;
+}
+
+.taxation-wrapper .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.taxation-wrapper .form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.taxation-wrapper .modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.taxation-wrapper .modal-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.taxation-wrapper .modal-actions button:first-child {
+  background-color: #8a2be2;
+  color: white;
+}
+
+.taxation-wrapper .modal-actions button:first-child:hover {
+  background-color: #6a1bbe;
+}
+
+.taxation-wrapper .modal-actions button:last-child {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.taxation-wrapper .modal-actions button:last-child:hover {
+  background-color: #e5e7eb;
+}
+
+/* Update the table-icons styling to accommodate the Add Item button */
+.taxation-wrapper .table-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.taxation-wrapper .table-header .add-btn {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+.taxation-wrapper .table-header .add-btn:hover {
+  background-color: #6a1bbe;
+}
+
+.taxation-wrapper .table-header .add-btn .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Remove the old add-item-form styling if it exists */
+.taxation-wrapper .add-item-form {
+  display: none;
+}
+
+/* Adjust header buttons to align Add Item and Download in a single line */
+.salary-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ensuring the header buttons align properly */
+.salary-wrapper .header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Moving Add Column button to the left */
+.salary-wrapper .add-btn-container {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  margin-top: 5px;
+}
+

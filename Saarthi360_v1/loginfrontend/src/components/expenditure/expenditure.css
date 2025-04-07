@@ -1,0 +1,85 @@
+/* ===============================
+   Header + Filter Row Container
+   =============================== */
+   .expenditure-form .header-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .expenditure-form .header-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  
+  /* ========================
+     Title & Info Block
+     ======================== */
+  .expenditure-form .title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .expenditure-form .title-section h2 {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  .expenditure-form .title-section p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  
+  /* ========================
+     Filter Group Styling
+     ======================== */
+  .expenditure-form .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .expenditure-form .filter-group select,
+  .expenditure-form .filter-group input,
+  .expenditure-form .filter-group button {
+    flex-shrink: 0;
+  }
+  
+  
+  /* ========================
+     Save Button Placement
+     ======================== */
+  .expenditure-form .save-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .expenditure-form .save-button-wrapper {
+      margin-top: 0;
+      justify-content: center;
+    }
+  }
+  
+  
+  /* ========================
+     Error Message Styling
+     ======================== */
+  .expenditure-form .error-message {
+    color: #b91c1c;
+    background-color: #fee2e2;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+  }

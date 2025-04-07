@@ -1,0 +1,215 @@
+/* Responsive Calendar */
+.calendar-container {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Hidden by default */
+    width: 350px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.calendar-container.open {
+    transform: translateX(-350px); /* Slide open */
+}
+
+.calendar-container.closed {
+    transform: translateX(0); /* Slide closed */
+}
+.toggle-btn {
+    position: absolute;
+    top: 5rem;
+    left: -2rem; /* Reduced distance from the calendar */
+    background-color: #4c4faf;
+    color: #fff;
+    border: none;
+    padding: 8px 12px; /* Improved padding for better clickability */
+    cursor: pointer;
+    border-radius: 50%; /* Circular button for sleek look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Standardized size */
+    height: 40px; /* Standardized size */
+    font-size: 1.2rem;
+}
+
+.toggle-btn:hover {
+    background-color: #5a5fcf; /* Slightly lighter color on hover */
+    transform: scale(1.1); /* Subtle enlargement on hover */
+}
+
+
+.calendar-panel {
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 3%;
+    border-radius: 8px;
+    background: #6a5acd;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar-header .calendar-title {
+    font-size: 1.5vw;
+}
+
+.calendar-header .nav-button {
+    background: none;
+    border: none;
+    font-size: 1.5vw;
+    color: white;
+    cursor: pointer;
+    padding: 1% 2%;
+    border-radius: 50%;
+    transition: background 0.2s ease-in-out;
+}
+
+.calendar-header .nav-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.calendar-grid div {
+    padding: 5% 0;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 1vw;
+    transition: 0.3s;
+}
+
+.calendar-grid div:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+.selected-day {
+    background: #6a5acd !important;
+    color: white !important;
+}
+
+/* Add Task Feature */
+.task-input-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Increased gap for better spacing */
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-input {
+    flex: 2; /* Wider space for task description */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1vw;
+}
+
+.task-time-input {
+    flex: 1; /* Reduces time field width to create spacing */
+    padding: 10px; /* Slightly increased padding for better visibility */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1vw;
+}
+
+
+.add-task-btn {
+    background: linear-gradient(145deg, #6a5acd, #483d8b);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-task-btn:hover {
+    background: #483d8b;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar-container {
+        max-width: 100%;
+    }
+
+    .calendar-header {
+        font-size: 3vw;
+    }
+
+    .calendar-grid div {
+        font-size: 3vw;
+        padding: 8% 0;
+    }
+
+    .task-input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-input,
+    .task-time-input {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .add-task-btn {
+        width: 100%;
+        font-size: 3vw;
+    }
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;  /* Ensures task name and time are spaced apart */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.task-item .task-name {
+    flex: 2;  /* Increases spacing for task names */
+    text-align: left; 
+}
+
+.task-item .task-time {
+    flex: 1;  /* Aligns time on the right with extra spacing */
+    text-align: right;  
+    color: #6a5acd;  /* Add some styling for better visibility */
+}
+

@@ -1,0 +1,121 @@
+.credit-note-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .credit-note-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    border: 2px solid #4a3aff;
+  }
+  
+  .credit-note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .credit-note-header h2 {
+    color: #4a3aff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .credit-note-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .credit-note-field {
+    flex: 1;
+  }
+  
+  .credit-note-field label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .credit-note-field input,
+  .credit-note-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .credit-note-field select {
+    background-color: white;
+  }
+  
+  .credit-note-note {
+    margin: 15px 0;
+    font-size: 12px;
+    color: #ff0000;
+  }
+  
+  .credit-note-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .save-button {
+    background-color: #4a3aff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #3929cc;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .credit-note-row {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .credit-note-field {
+      width: 100%;
+    }
+  
+    .credit-note-container {
+      width: 95%;
+      padding: 15px;
+    }
+  }
+  
+  

@@ -1,0 +1,456 @@
+/* Centering the Entire Client Terms Section */
+.client-terms-container {
+  position: relative; /* Change from fixed to relative */
+  top: 0; /* Reset the top value */
+  left: 0; /* Align with content flow */
+  width: calc(100% - 5px); /* Adjust width to account for sidebar */
+  margin-left: 110px; /* Offset by sidebar width */
+  height: 100vh; /* Full height to match sidebar */
+  padding: 2%;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  font-family: 'Inter', sans-serif;
+  color: #1E293B;
+
+}
+.client-terms-wrapper {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+/* Centering the Client Terms Container */
+
+
+  
+  /* Header */
+  .client-terms-wrapper .client-terms-header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  }
+  
+  .client-terms-wrapper .client-terms-header h2 {
+    font-size: 1.25rem;
+  font-weight: 600;
+  }
+  
+  .client-terms-wrapper .client-terms-header-buttons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Button Classes */
+  .client-terms-wrapper .download-btn,
+  .client-terms-wrapper .add-btn {
+    padding: 12px;
+    background: #6b46c1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .client-terms-wrapper .add-btn:hover {
+    background: #553c9a;
+  }
+  
+  /* Table Container */
+  .client-terms-wrapper .client-terms-table-container {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-grow: 1; /* Allow table to expand to fill available space */
+    display: flex; /* Use flexbox for table container */
+    width: 100%;
+  }
+  
+  /* Table Styles */
+  .client-terms-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    table-layout: fixed;
+  }
+  
+  .client-terms-wrapper th, 
+  .client-terms-wrapper td {
+      padding: 12px;
+      border: 1px solid #e0e0e0;
+      text-align: left;
+      font-size: 18px;
+  }
+  
+  .client-terms-wrapper th {
+    background: #f8f8f8;
+    padding: 12px 16px;
+    text-align: center;
+    font-weight: 600;
+    color: #6b46c1;
+    white-space: wrap; /* Prevent header text from wrapping */
+    overflow: hidden;    /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
+    font-size: 16px;
+  }
+  
+  .client-terms-wrapper td {
+    padding: 10px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 1.2rem;
+    text-align: center; /* Center the text within cells */
+  }
+  
+  /* Head Component */
+  .client-terms-wrapper .head-component {
+    color: #6b46c1;
+    font-weight: 500;
+    height: 5px;
+    font-size: 1.2rem;
+  }
+  
+  /* Charges Column 
+  .client-terms-wrapper .client-terms-charges-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px;
+    align-items: flex-end;
+    width: 100px;
+    font-size: 1.2rem;
+  }
+  
+  .client-terms-wrapper .client-terms-charge-item {
+    padding: 4px 8px;
+    background: #f3f0ff;
+    border-radius: 4px;
+    white-space: nowrap;
+    color: #553c9a;
+  }
+  
+  */
+  /* Add Charge Button 
+  .client-terms-wrapper .add-charge-btn {
+    padding: 4px 8px;
+    background: #f3f0ff;
+    border: 1px dashed #6b46c1;
+    border-radius: 4px;
+    color: #6b46c1;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  */
+  
+  
+  /* Actions */
+  .client-terms-wrapper .client-terms-actions {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    width: 200px; /* Adjusted width for better alignment */
+  }
+  
+  /* Added styles for the header */
+  .client-terms-wrapper .client-terms-actions-header {
+    text-align: center; /* Center the header text */
+    width: 200px; /* Match the width of the action buttons */
+  }
+  
+  /* Icon Buttons */
+  .client-terms-wrapper .client-terms-icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px; /* Increased padding for better click area */
+    border-radius: 4px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  
+  .client-terms-wrapper .client-terms-icon-btn:hover {
+    background: #f3f0ff;
+  }
+  
+  .client-terms-wrapper .client-terms-edit {
+    display: flex;
+    justify-content: space-evenly; /* Right-align icons */
+    align-items: center;
+    width: 100%;
+    gap: 12px; /* space between icons */
+    font-size: 22px; /* Changed color for better visibility */
+  }
+  
+  .client-terms-wrapper .client-terms-delete {
+    display: flex;
+    justify-content: flex-start; /* Right-align icons */
+    align-items: center;
+    width: 100%;
+    gap: 12px; /* space between icons */
+    font-size: 22px; /* Changed color for better visibility */
+  }
+  
+  .client-terms-wrapper .client-terms-download {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 16px;
+    cursor: pointer;
+    color: #6b21a8;
+  }
+  
+  /* Pagination if needed */
+  .client-terms-wrapper .client-terms-pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .client-terms-wrapper .page-btn {
+    padding: 6px 12px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .client-terms-wrapper .page-btn:hover {
+    background: #f5f5f5;
+  }
+  
+  /* Modal Styling 
+  .client-terms-wrapper .client-terms-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+    */
+  
+  .client-terms-wrapper .client-terms-modal-content {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    min-width: 400px;
+    max-width: 600px;
+  }
+  
+  /* Modal Header (changed from generic .modal h2 to scoped) */
+  .client-terms-wrapper .modal-content h2,
+  .client-terms-wrapper .client-terms-modal-content h2 {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  
+  /* Form Groups */
+  .client-terms-wrapper .client-terms-form-group {
+    margin-bottom: 16px;
+    padding: 20px;
+  }
+  
+  .client-terms-wrapper .client-terms-form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .client-terms-wrapper .client-terms-form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  /* Add Field Button */
+  .client-terms-wrapper .client-terms-add-field-btn {
+    background: none;
+    border: none;
+    color: #6b46c1;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+  
+  /* Modal Actions */
+  .client-terms-wrapper .client-terms-modal-actions,
+  .client-terms-wrapper .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  
+  /* Cancel, Save and Delete Buttons */
+  .client-terms-wrapper .client-terms-cancel-btn {
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .client-terms-wrapper .client-terms-save-btn {
+    padding: 8px;
+    background: #6b46c1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .client-terms-wrapper .client-terms-delete-btn {
+    padding: 8px;
+    background: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .client-terms-wrapper .client-terms-cancel-btn:hover {
+    background: #f5f5f5;
+  }
+  
+  .client-terms-wrapper .client-terms-save-btn:hover {
+    background: #553c9a;
+  }
+  
+  .client-terms-wrapper .client-terms-delete-btn:hover {
+    background: #c53030;
+  }
+  
+  /* Scrollbar styling for charges list */
+  .client-terms-wrapper .client-terms-charges-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .client-terms-wrapper .client-terms-charges-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  .client-terms-wrapper .client-terms-charges-scroll::-webkit-scrollbar-thumb {
+    background: #c4b5fd;
+    border-radius: 3px;
+  }
+  
+  .client-terms-wrapper .client-terms-charges-scroll::-webkit-scrollbar-thumb:hover {
+    background: #9f7aea;
+  }
+  
+  /* Duplicate icon-btn definition, now fully scoped */
+  .client-terms-wrapper .client-terms-icon-btn {
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  /* Icon Colors */
+  .client-terms-wrapper .client-terms-edit-icon {
+    color: #4a4a4a;
+    font-size: 20px;
+  }
+  
+  .client-terms-wrapper .client-terms-delete-icon {
+    color: #e63946;
+    font-size: 20px;
+  }
+  
+  .client-terms-wrapper .client-terms-icon-btn:hover .client-terms-edit-icon {
+    color: #f3f0ff;
+  }
+  
+  .client-terms-wrapper .client-terms-icon-btn:hover .client-terms-delete-icon {
+    color: #f3f0ff;
+  }
+  
+  /* Bottom Controls */
+  .client-terms-wrapper .client-terms-bottom-controls {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .client-terms-wrapper .client-terms-add-row-btn,
+  .client-terms-wrapper .client-terms-add-column-btn,
+  .client-terms-wrapper .client-terms-remove-column-btn {
+    padding: 8px 16px;
+    background: #6b46c1;
+    color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .client-terms-wrapper .client-terms-add-row-btn:hover,
+  .client-terms-wrapper .client-terms-add-column-btn:hover,
+  .client-terms-wrapper .client-terms-remove-column-btn:hover {
+    background: #553c9a;
+  }
+  
+  /* ... (Your existing CSS) */
+  
+  /* Edit Form Container */
+  .client-terms-wrapper .edit-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    z-index: 1001; /* Ensure it's above other modal content */
+    margin-bottom: 30px;
+  }
+  
+  /* ... (Your other CSS) */
+  /* ... (Your existing CSS) */
+  
+  /* Add Form Container (Same styles as edit-form-container) */
+  .client-terms-wrapper .add-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 500px;
+    z-index: 1001; /* Ensure it's above other modal content */
+  }
+  
+  /* ... (Your other CSS) */
+  
+  .client-terms-wrapper .client-terms-add-item-btn {
+    padding: 2px 5px;
+    background: #6b46c1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .client-terms-wrapper .client-terms-add-item-btn:hover {
+    background: #553c9a;
+  }

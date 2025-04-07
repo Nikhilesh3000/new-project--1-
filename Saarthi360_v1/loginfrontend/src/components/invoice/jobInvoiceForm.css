@@ -1,0 +1,115 @@
+.job-invoice-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .job-invoice-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 800px;
+    max-width: 95%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #5d4b8c;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .job-invoice-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .job-invoice-form-header h2 {
+    color: #5d4b8c;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  
+  .job-invoice-close-btn {
+    background-color: #f0f0f0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .job-invoice-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .job-invoice-form-group {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .job-invoice-form-group label {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  .job-invoice-input,
+  .job-invoice-select,
+  .job-invoice-date-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .job-invoice-file-input {
+    padding: 10px 0;
+  }
+  
+  .job-invoice-file-info {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .job-invoice-form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .job-invoice-save-btn {
+    background-color: #3a2d5b;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .job-invoice-save-btn:hover {
+    background-color: #5d4b8c;
+  }
+  
+  

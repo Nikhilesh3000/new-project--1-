@@ -1,0 +1,126 @@
+.revised-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .revised-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #5d4b8c;
+  }
+  
+  .revised-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .revised-form-header h2 {
+    color: #5d4b8c;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  
+  .revised-close-btn {
+    background-color: #f0f0f0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .revised-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .revised-form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .revised-form-group label {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  .revised-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .revised-date-input-container {
+    position: relative;
+  }
+  
+  .revised-date-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding-right: 30px; /* Space for calendar icon */
+  }
+  
+  .revised-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px dashed #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .revised-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .revised-form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .revised-save-btn {
+    background-color: #3a2d5b;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .revised-save-btn:hover {
+    background-color: #5d4b8c;
+  }
+  
+  
